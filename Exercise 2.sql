@@ -20,3 +20,10 @@ VALUES ('101', 'Nevas', 'John', 'G', '1994-11-08', 502),
 ('109', 'Field', 'Larry', 'W', '1999-07-18', 501);
 
 SET SQL_SAFE_UPDATES=0;
+
+UPDATE emp_1
+SET JOB_CODE = 501
+WHERE EMP_NUM = 106;
+
+DELETE FROM emp_1 
+WHERE (EMP_NUM = '106');
