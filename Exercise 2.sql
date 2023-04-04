@@ -1,0 +1,22 @@
+CREATE DATABASE Exercise1;
+CREATE TABLE EMP_1(EMP_NUM CHAR (3), EMP_Lname VARCHAR(15), EMP_FNAME VARCHAR(15), EMP_INITIAL CHAR(1), EMP_HIREDATE DATE, JOB_CODE CHAR(3));
+INSERT INTO EMP_1 (EMP_NUM, EMP_Lname, EMP_FNAME, EMP_INITIAL, EMP_HIREDATE, JOB_CODE)
+VALUES ('222', 'Ferrer', 'Zelpha Grace', 'F', '1978-11-07', 456);
+INSERT INTO EMP_1(EMP_NUM, EMP_Lname, EMP_FNAME, EMP_INITIAL, EMP_HIREDATE, JOB_CODE)
+VALUES ('111', 'Roldan', 'Xienina', 'F', '2003-03-09', 123);
+INSERT INTO EMP_1 (EMP_NUM, EMP_Lname, EMP_FNAME, EMP_INITIAL, EMP_HIREDATE, JOB_CODE)
+VALUES ('333', 'Roldan', 'Juanito', 'V', '1978-11-03', 502);
+SELECT * FROM EMP_1 WHERE JOB_CODE = '502';
+
+INSERT INTO emp_1 (EMP_NUM, EMP_Lname, EMP_FNAME, EMP_INITIAL, EMP_HIREDATE, JOB_CODE)
+VALUES ('101', 'Nevas', 'John', 'G', '1994-11-08', 502),
+('102', 'Senior', 'David', 'H', '1987-07-12', 501),
+('103', 'Arbos', 'June', 'E', '1996-12-01', 500),
+('104', 'Ramoras', 'Anne', 'K', '1998-11-15', 501),
+('105', 'Joson', 'Alice', 'P', '1993-02-01', 502),
+('106', 'Smith', 'William', 'D', '1990-06-23', 500),
+('107', 'Alonso', 'Mara', 'F', '1991-10-10', 500),
+('108', 'Washington', 'Raf', 'S', '1989-08-22', 501),
+('109', 'Field', 'Larry', 'W', '1999-07-18', 501);
+
+SET SQL_SAFE_UPDATES=0;
